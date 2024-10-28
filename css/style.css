@@ -1,0 +1,107 @@
+body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: url(../images/fon_site.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+.header {
+        display: flex;
+        justify-content: space-between;
+        border: solid 1px #333;
+        border: 1mm ridge rgba(50, 195, 220, 0.322);
+        }
+.menu {
+        display: flex;
+        justify-content: space-around;
+        width: 75%;
+        text-decoration: none;
+        align-items: flex-end;
+     }
+.menu ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style-type: none;
+        text-decoration: none;
+        font-size: 20px;
+        color: #da2929;
+         }
+
+div.logo {
+        padding: 10px;
+        box-shadow: 100px 10px 20px 20px rgba(0, 0, 255, .2);
+         }
+footer {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        text-align: center;
+        border: none;
+        position: fixed;  /* Фиксируем шапку */
+        bottom: 0;
+        width: 100%;
+        background-color: rgba(181, 241, 236, 0.418);  /* Полупрозрачный фон */
+        padding: 10px;
+        z-index: 1000;  /* Поверх остальных элементов */
+        }
+footer .author {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 60%;
+        color: rgb(2, 27, 97);
+        align-self: flex-end;
+               }
+ .code-block {
+        width: 300px; /* Ширина блока */
+        height: 150px; /* Высота блока */
+        overflow-x: auto; /* Горизонтальная прокрутка при необходимости */
+        background-color: #f0f0f0; /* Цвет фона */
+        padding: 10px; /* Отступы внутри блока */
+        border: 1px solid #ccc; /* Граница блока */
+        border-radius: 5px; /* Скругление углов */
+        font-family: monospace; /* Шрифт для кода */
+             }
+.body {
+        display: flex;
+        margin-bottom: 9.5em;
+     }
+div.info,
+div.article {
+        display: flex;
+        flex-direction: column;
+        border: solid 1px #333;
+        border: 1mm ridge rgba(50, 195, 220, 0.322);
+        padding: 20px;
+            }
+ @media screen and (max-width: 600px) 
+        {
+        .body {
+            flex-direction: column;
+              }
+        .menu ul {
+            flex-direction: column;
+            text-align: center;
+                 }
+         }
+ .gradient-button {
+        text-decoration: none;
+        display: inline-block;
+        color: white;
+        font-size: 20px;
+        padding: 5px 10px;
+        margin: 1px 5px;
+        border-radius: 10px;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+        background-size: 200% auto;
+        box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+        transition: .5s;
+                    }
+.gradient-button:hover {
+        background-position: right center;
+                       }

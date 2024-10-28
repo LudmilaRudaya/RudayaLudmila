@@ -1,0 +1,105 @@
+.gridContainer {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "nav article article"
+      "footer footer footer";
+    grid-template-rows: 200px 1fr 100px;
+    grid-template-columns: 20% 1fr 15%;
+    grid-gap: 5px;
+    height: 100vh;
+    margin: 0;
+  }
+
+  header,
+  footer,
+  article,
+  nav {
+	display: flex;
+	gap: 20px;
+    padding: 10px;
+    background: rgba(252, 254, 255, 0.185);
+    font-size: 20px;
+    border: none;
+  }
+
+  #pageHeader {
+    display: flex;
+    grid-area: header;
+    margin-left: 1px;
+    color: #dcdcff;
+
+
+  }
+
+  #pageFooter {
+    grid-area: footer;
+  }
+
+  #mainNav {
+    grid-area: nav;
+
+  }
+  #mainNav div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #pageFooter div {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+
+  #pageHeader {
+    display: flex;
+    gap: 120px;
+
+  }
+
+  #mainArticle {
+    display: flex;
+    font-size: 20px;
+    text-align: left;
+    border-left: 3px solid  #dcdcff; /* Линия справа текста */
+  }
+
+  #pageFooter {
+    border-top: 3px solid  #dcdcff; /* Линия сверху текста */
+    border-bottom: 2px solid  #dcdcff; /* Линия снизу текста */
+    padding: 5px; /* Поля вокруг текста */
+    color: #3f0abb; padding: 10px; /* Цвет текста */
+ 
+  }
+
+  #pageHeader {
+
+    border-top: double;
+    border-bottom: solid;
+  }
+
+  #mainArticle div {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+  .gradient-button {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-size: 14px;
+    padding: 5px 10px;
+    margin: 1px 5px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    transition: .5s;
+  }
+  .gradient-button:hover {
+    background-position: right center;
+  }
